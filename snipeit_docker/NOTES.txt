@@ -1,0 +1,10 @@
+#TO install the snipeit docker along with mysql as a database
+
+#RUN the snipeit.sh script
+
+#If you have privious snipeit and mysql docker container running then first run the destroy script
+
+#If you want a fresh install from scratch then comment out the last line in snipeit.sh
+
+#if you wants to restore your previous backup then put your sql dumb file in the current directry
+#And change the dumb file name in script.sh file.
