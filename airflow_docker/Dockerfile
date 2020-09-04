@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-LABEL "Created_By"="Zerogons Softwares"
+LABEL "Created_By"="v0ldemort"
 WORKDIR /root
 
 # Configure a airflow user with sudo privilages
