@@ -36,4 +36,4 @@ sed "s/dockerkey/$(docker run --rm snipe/snipe-it:v4.7.3 | grep base64)/" my_env
 docker run --name snipe-mysql --env-file=my_env --mount source=snipesql-vol,target=/var/lib/mysql -d -P mysql:5.6
 docker run -d -p 8081:80 --name="snipeit" --link snipe-mysql:mysql --env-file=my_env --mount source=snipe-vol,dst=/var/lib/snipeit snipe/snipe-it:v4.7.3
 sleep 30
-docker exec -i snipe-mysql /usr/bin/mysql -u root --password=root snipeit < snipeit_backup10062020.sql
+#docker exec -i snipe-mysql /usr/bin/mysql -u root --password=root snipeit < >backupfile.sql< 
