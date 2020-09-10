@@ -37,3 +37,4 @@ docker run --name snipe-mysql --env-file=my_env --mount source=snipesql-vol,targ
 docker run -d -p 8081:80 --name="snipeit" --link snipe-mysql:mysql --env-file=my_env --mount source=snipe-vol,dst=/var/lib/snipeit snipe/snipe-it:v4.7.3
 sleep 30
 #docker exec -i snipe-mysql /usr/bin/mysql -u root --password=root snipeit < >backupfile.sql< 
+echo "you can use this IP to access SnipeIT UI - $(curl ifconfig.me):8081"
